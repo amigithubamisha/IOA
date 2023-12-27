@@ -1,0 +1,83 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, 
+  *:before, 
+  *:after {
+    box-sizing: inherit;
+  }
+  
+  /* body {
+    background-color: #171414;
+  }
+   */
+  .image-grid {
+    padding: 12px;
+  }
+  
+  .image-row {
+    display: flex;  
+  }
+  
+  .image-row .image {
+    margin: 12px;
+    height: 400px;
+    border-radius: 15px;  
+  }
+  
+  .image { 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3), 
+                0 6px 20px rgba(0, 0, 0, 0.3),
+                0 6px 20px rgba(0, 0, 0, 0.5);
+                
+  }
+  
+  .image-01 {
+    background-image: url('https://pbs.twimg.com/media/F9pwLlhaQAAdT4H?format=jpg&name=large'); 
+    flex: 1;  
+  }
+  
+  .image-02 {
+    background-image: url('https://assets.telegraphindia.com/telegraph/21oriUS4.jpg'); 
+    flex: 1;  
+  }
+  
+  .image-03 {
+    background-image: url('https://i.ytimg.com/vi/Dbt27LFURMM/hqdefault.jpg?sqp=-oaymwEmCOADEOgC8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGHIgUShBMA8=&rs=AOn4CLArS8S8bFAVteuTYF7ISQYZyWrWPg');  
+    flex: 2;  
+  }
+  
+  .image-04 {
+    background-image: url('https://sambadenglish.com/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-25-at-9.38.09-AM.jpeg'); 
+    flex: 1;
+  }
+  
+  .image-05 {
+    background-image: url('https://indiawhispers.com/wp-content/uploads/2023/12/20231205_225733.jpg');
+    flex: 2;
+  }
+  
+  .image-06 {
+    background-image: url('https://odiaireland.org/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-08-at-3.15.07-PM-1024x576.jpeg');  
+    flex: 2;
+  }
+  
+  .image-07 {
+    background-image: url('https://odiaireland.org/wp-content/uploads/2023/08/Raja-2023-Glendalough--1024x1024.jpg'); 
+    flex: 1;
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .image-row {
+      flex-direction: column;
+    }
+    
+    .image-row .image {
+      flex-basis: auto;
+    }
+  }

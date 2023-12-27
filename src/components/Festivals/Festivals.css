@@ -1,0 +1,111 @@
+/* festivals section */
+.festivals-container {
+  padding: 12px 0;
+  background-color: #5FA8D3;
+  margin-top: 10px;
+}
+
+.festivals-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.festivals-header {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
+}
+
+.festivals-description {
+  text-align: center;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+}
+.main-container{
+    max-width: 1300px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-column-gap: 20px;
+}
+
+.card{
+    background-color: #fff;
+    position: relative;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+.card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+.card-body{
+    padding: 20px;
+}
+
+.card-body .btn{
+    width: 100%;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 250px;
+    text-align: center;
+    background-color: #1B4965;
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    transition: 0.4s ease;
+    border: unset;
+    border-radius: 10px;
+}
+
+.card-body .btn:hover{
+    background-color: #5FA8D3;
+    color: #000;
+}
+.load-more-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  
+}
+
+.load-more-button button {
+  font-size: 20px;
+  padding: 15px;
+  background-color: #1B4965;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.load-more-button button:hover{
+  background-color: #62B6CB;
+  color: #000;
+}
+
+@media screen and (max-width:768px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        grid-row-gap: 55px;
+    }
+    .festivals-header{
+      font-size: 35px;
+    }
+}
+
